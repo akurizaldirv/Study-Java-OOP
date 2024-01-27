@@ -1,10 +1,18 @@
 class Weapon {
-    String name;
-    double attackPower;
+    private String name;
+    private double attackPower;
 
     Weapon(String name, double attackPower) {
         this.name = name;
         this.attackPower = attackPower;
+    }
+
+    public String getName () {
+        return this.name;
+    }
+
+    public double getAttackPower () {
+        return this.attackPower;
     }
 
     void display() {

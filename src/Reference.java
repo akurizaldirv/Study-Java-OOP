@@ -9,7 +9,7 @@ public class Reference {
         System.out.println(Integer.toHexString(System.identityHashCode(player2)));
 
 //        Set player 2 name, autoset in player 1
-        player2.name = "Auto Complete";
+        player2.setName("Auto Complete");
         player2.show();
         player1.show();
     }

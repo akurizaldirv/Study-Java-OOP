@@ -1,10 +1,18 @@
 class Armor {
-    String name;
-    double defencePower;
+    private String name;
+    private double defencePower;
 
     Armor(String name, double defencePower) {
         this.name = name;
         this.defencePower = defencePower;
+    }
+
+    public String getName () {
+        return this.name;
+    }
+
+    public double getDefencePower() {
+        return this.defencePower;
     }
 
     void display() {
