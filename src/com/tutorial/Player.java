@@ -1,6 +1,7 @@
 package com.tutorial;
 
 class Player {
+    private static int numberOfPlayer;
     private String name;
     private int level;
     private int health;
@@ -16,6 +17,22 @@ class Player {
         this.level = 1;
         this.attack = 100;
         this.isAlive = true;
+
+        Player.numberOfPlayer++;
+
+        System.out.println("com.tutorial.Player Created");
+        this.show();
+    }
+
+    Player () {
+        Player.numberOfPlayer++;
+        this.name = "Player" + numberOfPlayer;
+        this.health = 100;
+        this.level = 1;
+        this.attack = 100;
+        this.isAlive = true;
+
+        Player.numberOfPlayer++;
 
         System.out.println("com.tutorial.Player Created");
         this.show();
