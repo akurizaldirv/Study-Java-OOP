@@ -1,24 +1,30 @@
 public class Main {
     public static void main(String[] args) {
-        Player aldi = new Player("Aldi", 100, 1);
+        Player aldi = new Player("Aldi");
 
-        Weapon sword = new Weapon("Sword", 20);
-        Armor shield = new Armor("Shield", 20);
+        Weapon sword = new Weapon("Sword", 40);
+        Armor shield = new Armor("Shield", 20, 20);
 
         aldi.equipWeapon(sword);
         aldi.equipArmor(shield);
 
         aldi.show();
 
-        Player budi = new Player("Budi", 50, 1);
+        Player budi = new Player("Budi");
 
-        Weapon pistol = new Weapon("Pistol", 30);
-        Armor tuxedo = new Armor("Tuxedo", 10);
+        Weapon pistol = new Weapon("Pistol", 60);
+        Armor tuxedo = new Armor("Tuxedo", 10, 20);
 
         budi.equipWeapon(pistol);
         budi.equipArmor(tuxedo);
 
         budi.show();
+
+        budi.upLevel();
+        aldi.upLevel();
+
+        budi.show();
+        aldi.show();
 
         System.out.println("=========== PERTEMPURAN ===========");
         System.out.println("\nEpisode - 1");
