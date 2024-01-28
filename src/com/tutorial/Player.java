@@ -1,3 +1,5 @@
+package com.tutorial;
+
 class Player {
     private String name;
     private int health;
@@ -11,7 +13,7 @@ class Player {
         this.health = health;
         this.level = level;
 
-        System.out.println("Player Created");
+        System.out.println("com.tutorial.Player Created");
         this.show();
     }
 
@@ -65,7 +67,7 @@ class Player {
     }
 
     void show() {
-        System.out.println("\nPlayer Info -------------------------");
+        System.out.println("\ncom.tutorial.Player Info -------------------------");
         System.out.println("Name\t\t: " + this.name);
         System.out.println("Health\t\t: " + this.health);
         System.out.println("Level\t\t: " + this.level);

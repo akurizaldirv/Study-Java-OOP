@@ -1,3 +1,5 @@
+package com.tutorial;
+
 class Weapon {
     private String name;
     private double attackPower;
@@ -16,6 +18,6 @@ class Weapon {
     }
 
     void display() {
-        System.out.println("Weapon : " + this.name + ", Attack Power : +" + this.attackPower);
+        System.out.println("com.tutorial.Weapon : " + this.name + ", Attack Power : +" + this.attackPower);
     }
 }

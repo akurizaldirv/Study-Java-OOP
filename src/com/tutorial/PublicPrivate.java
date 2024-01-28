@@ -1,3 +1,5 @@
+package com.tutorial;
+
 class Buku {
     String title; // default to public
     public String author; // accessible by outside class

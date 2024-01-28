@@ -1,9 +1,11 @@
+package com.tutorial;
+
 public class Reference {
     public static void main(String[] args) {
         Player player1 = new Player("Aldi", 100, 2);
         System.out.println(Integer.toHexString(System.identityHashCode(player1)));
 
-//        Copying Reference
+//        Copying com.tutorial.Reference
         Player player2 = player1;
         player2.show();
         System.out.println(Integer.toHexString(System.identityHashCode(player2)));

@@ -1,3 +1,5 @@
+package com.tutorial;
+
 public class Main {
     public static void main(String[] args) {
         Player aldi = new Player("Aldi", 100, 1);
