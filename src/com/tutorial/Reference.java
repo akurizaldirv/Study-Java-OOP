@@ -1,6 +1,6 @@
 package com.tutorial;
 
-public class Reference {
+class Reference {
     public static void main(String[] args) {
         Player player1 = new Player("Aldi");
         System.out.println(Integer.toHexString(System.identityHashCode(player1)));

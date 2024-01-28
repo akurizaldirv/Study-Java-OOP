@@ -1,6 +1,6 @@
 package com.tutorial;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Player aldi = new Player("Aldi");
 

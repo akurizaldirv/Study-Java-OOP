@@ -2,7 +2,7 @@ package com.tutorial;
 
 import java.util.ArrayList;
 
-public class Static {
+class Static {
     private static int numberOfStatic;
     private static ArrayList<String> nameOfStatic = new ArrayList<String>();
     private String name;

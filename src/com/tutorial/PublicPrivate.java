@@ -24,7 +24,7 @@ class Buku {
     }
 }
 
-public class PublicPrivate {
+class PublicPrivate {
     public static void main(String[] args) {
         Buku dataBuku = new Buku("Dunia Sophie", "Jostein Gaarder", 1996);
 
