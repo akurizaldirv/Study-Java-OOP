@@ -2,7 +2,7 @@ package com.tutorial;
 
 class Main {
     public static void main(String[] args) {
-        Player player1 = new Player("Aldi");
+        Player player1 = new Barbarian("Aldi");
 
         Weapon sword = new Weapon("Sword", 40);
         Armor shield = new Armor("Shield", 20, 20);
@@ -12,7 +12,7 @@ class Main {
 
         player1.show();
 
-        Player player2 = new Player("Budi");
+        Player player2 = new Mage("Budi");
 
         Weapon pistol = new Weapon("Pistol", 60);
         Armor tuxedo = new Armor("Tuxedo", 10, 20);
@@ -28,7 +28,7 @@ class Main {
         player2.show();
         player1.show();
 
-        System.out.println("=========== PERTEMPURAN ===========");
+        System.out.println("============ PERTEMPURAN ============");
         System.out.println("\nEpisode - 1");
         player1.attack(player2);
 
@@ -41,7 +41,7 @@ class Main {
         player2.show();
         player1.show();
 
-
         Player player3 = new Player();
+        player3.show();
     }
 }
