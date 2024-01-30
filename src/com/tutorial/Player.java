@@ -2,14 +2,14 @@ package com.tutorial;
 
 class Player {
     private static int numberOfPlayer;
-    protected String name;
-    protected int level;
-    protected int health;
-    protected int attack;
-    protected boolean isAlive;
+    private String name;
+    private int level;
+    private int health;
+    private int attack;
+    private boolean isAlive;
 
-    protected Weapon weapon;
-    protected Armor armor;
+    private Weapon weapon;
+    private Armor armor;
 
     Player(String name) {
         this.name = name;
@@ -38,22 +38,56 @@ class Player {
         return name;
     }
 
-    public int getHealth() {
-        return health;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getLevel() {
         return level;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLevel(int level) {
+        this.level = level;
     }
 
-    public void setHealth(int health) { this.health = health; }
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getAttack() {
+        return attack;
+    }
 
     public void setAttack(int attack) {
         this.attack = attack;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public Armor getArmor() {
+        return armor;
+    }
+
+    public void setArmor(Armor armor) {
+        this.armor = armor;
     }
 
     public void upLevel () {

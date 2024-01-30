@@ -14,8 +14,8 @@ public class Mage extends Player{
     }
 
     public void attack (Player opponent) {
-        double attackPower = 1.2*this.weapon.getAttackPower();
-        System.out.println("* " +  this.name + " attacking " + opponent.name + " with 120% of " + attackPower + " power");
+        double attackPower = 1.2*this.getWeapon().getAttackPower();
+        System.out.println("* " +  this.getName() + " attacking " + opponent.getName() + " with 120% of " + attackPower + " power");
         opponent.defence(attackPower);
     }
 }

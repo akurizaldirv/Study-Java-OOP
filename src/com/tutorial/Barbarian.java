@@ -16,18 +16,18 @@ public class Barbarian extends Player {
     @Override
     public void defence(double attackPower) {
         double damage;
-        if (this.armor.getDefencePower() < attackPower) {
-            damage = attackPower - this.armor.getDefencePower();
+        if (this.getArmor().getDefencePower() < attackPower) {
+            damage = attackPower - this.getArmor().getDefencePower();
         } else {
             damage = 0;
         }
 
-        this.health -= 0.5*damage;
-        System.out.println("* " + this.name + " receiving half damage");
+        this.setHealth((int) (this.getHealth() - 0.5*damage));
+        System.out.println("* " + this.getName() + " receiving half damage");
 
-        if (this.health <= 0) {
-            this.isAlive = false;
-            System.out.println("* " + this.name + " dead");
+        if (this.getHealth() <= 0) {
+            this.setAlive(false);
+            System.out.println("* " + this.getName() + " dead");
         }
 
         this.show();
